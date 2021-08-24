@@ -6,9 +6,15 @@ const Filters = () => {
   return (
     <div className="FilterLink">
       <span>Show:</span>
-      <FilterLink filter={todolistFilters.SHOW_ALL}>All</FilterLink>
-      <FilterLink filter={todolistFilters.SHOW_ACTIVE}>Active</FilterLink>
-      <FilterLink filter={todolistFilters.SHOW_COMPLETED}>Completed</FilterLink>
+      <FilterLink className="link" filter={todolistFilters.SHOW_ALL}>
+        All
+      </FilterLink>
+      <FilterLink className="link" filter={todolistFilters.SHOW_ACTIVE}>
+        Active
+      </FilterLink>
+      <FilterLink className="link" filter={todolistFilters.SHOW_COMPLETED}>
+        Completed
+      </FilterLink>
     </div>
   );
 };
