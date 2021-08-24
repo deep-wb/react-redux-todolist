@@ -30,10 +30,11 @@ const mapDispatchToProps = (dispatch) => {
 
 const TodoList = ({ todos, toggleTodo }) => {
   return (
-    <div>
+    <div className="list">
       <ul>
         {todos.map((todo) => (
           <li
+            className="li"
             onClick={() => toggleTodo(todo.id)}
             key={todo.id}
             style={{ textDecoration: todo.completed ? "line-through" : "none" }}
